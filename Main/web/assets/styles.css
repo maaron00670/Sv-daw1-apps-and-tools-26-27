@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light;
+
   --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
@@ -10,6 +12,7 @@
   --line-strong: #b9c0d3;
   --accent: #2e55f5;
   --accent-soft: #e6ecff;
+  --accent-ink: #ffffff;
   --ok: #17825a;
   --wip: #a86a00;
   --todo: #7a8196;
@@ -19,20 +22,22 @@
   --radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #10131e;
-    --surface: #171b29;
-    --ink: #e8ebf5;
-    --muted: #9ba3bd;
-    --line: #2a3045;
-    --line-strong: #434b69;
-    --accent: #86a0ff;
-    --accent-soft: #222b55;
-    --ok: #4fcb97;
-    --wip: #e2b04d;
-    --todo: #8c93ab;
-  }
+/* Tema oscuro: se activa con data-theme="dark" (botón) o por preferencia del sistema. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #10131e;
+  --surface: #171b29;
+  --ink: #e8ebf5;
+  --muted: #9ba3bd;
+  --line: #2a3045;
+  --line-strong: #434b69;
+  --accent: #86a0ff;
+  --accent-soft: #222b55;
+  --accent-ink: #0c1030;
+  --ok: #4fcb97;
+  --wip: #e2b04d;
+  --todo: #8c93ab;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -85,7 +90,11 @@ main { flex: 1; padding: 2rem clamp(1rem, 4vw, 3rem) 3rem; width: 100%; max-widt
 .nav a:hover { background: var(--accent-soft); }
 .nav a[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .nav a.is-pending { color: var(--muted); }
-.side-foot { margin: auto 0 0; padding: 0 .5rem; font-size: .875rem; line-height: 1.9; }
+.side-foot {
+  margin: auto 0 0; padding: 0 .5rem; font-size: .875rem; line-height: 1.9;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+}
+.side-foot p { margin: 0; }
 
 .dot { flex: none; width: .6rem; height: .6rem; border-radius: 50%; background: var(--todo); }
 .dot.ok { background: var(--ok); }
@@ -109,6 +118,7 @@ main { flex: 1; padding: 2rem clamp(1rem, 4vw, 3rem) 3rem; width: 100%; max-widt
     font: 600 .9rem var(--font-body); color: var(--ink); background: transparent;
     border: 1px solid var(--line-strong); border-radius: 8px; padding: .4rem .8rem; cursor: pointer;
   }
+  .topbar .btn-theme { margin-left: auto; }
   .sidebar {
     position: fixed; z-index: 50; left: 0; top: 0; bottom: 0; width: min(19rem, 86vw);
     transform: translateX(-100%); transition: transform .2s ease;
@@ -117,6 +127,19 @@ main { flex: 1; padding: 2rem clamp(1rem, 4vw, 3rem) 3rem; width: 100%; max-widt
   body.nav-open .sidebar { transform: none; }
   body.nav-open .scrim { display: block; position: fixed; inset: 0; z-index: 40; background: rgb(10 12 24 / .5); }
 }
+
+/* ---------- tema claro/oscuro ---------- */
+.btn-theme {
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  width: 2.25rem; height: 2.25rem; padding: 0;
+  color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: 8px; cursor: pointer;
+}
+.btn-theme:hover { border-color: var(--accent); color: var(--accent); }
+.btn-theme svg { width: 1.15rem; height: 1.15rem; }
+.btn-theme .i-sun { display: none; }
+:root[data-theme="dark"] .btn-theme .i-sun { display: block; }
+:root[data-theme="dark"] .btn-theme .i-moon { display: none; }
 
 /* ---------- toolbar ---------- */
 .toolbar {
@@ -138,8 +161,7 @@ main { flex: 1; padding: 2rem clamp(1rem, 4vw, 3rem) 3rem; width: 100%; max-widt
   border: 1px solid var(--line-strong); border-radius: 999px; padding: .4rem .85rem; cursor: pointer;
 }
 .seg button:hover { border-color: var(--accent); }
-.seg button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
-@media (prefers-color-scheme: dark) { .seg button[aria-pressed="true"] { color: #0c1030; } }
+.seg button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 
 /* ---------- tipografía de página ---------- */
 h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -.015em; margin: 0; }
@@ -186,9 +208,8 @@ p { margin: 0; }
   border-radius: 8px; border: 1.5px solid var(--accent); color: var(--accent);
 }
 .btn:hover { background: var(--accent-soft); }
-.btn.primary { background: var(--accent); color: #fff; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
 .btn.primary:hover { filter: brightness(1.08); }
-@media (prefers-color-scheme: dark) { .btn.primary { color: #0c1030; } }
 
 /* ---------- secciones y herramientas ---------- */
 .sec { margin-top: 2.5rem; }

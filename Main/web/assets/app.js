@@ -70,6 +70,34 @@
   const route = () => decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   const issueUrl = REPO ? `${REPO}/issues/new` : null;
 
+  /* ---------- tema ---------- */
+  const THEME_KEY = 'theme';
+  let userTheme = null; // elección explícita del usuario en esta sesión
+
+  const readTheme = () => {
+    try { return localStorage.getItem(THEME_KEY); } catch (e) { return null; }
+  };
+  const writeTheme = (t) => {
+    try { localStorage.setItem(THEME_KEY, t); } catch (e) { /* sin almacenamiento */ }
+  };
+  const currentTheme = () => (document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+
+  function applyTheme(t) {
+    document.documentElement.dataset.theme = t;
+    const label = t === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+    document.querySelectorAll('[data-theme-toggle]').forEach((b) => {
+      b.setAttribute('aria-label', label);
+      b.setAttribute('title', label);
+    });
+  }
+
+  function toggleTheme() {
+    const next = currentTheme() === 'dark' ? 'light' : 'dark';
+    userTheme = next;
+    applyTheme(next);
+    writeTheme(next);
+  }
+
   /* ---------- piezas ---------- */
   function statusChip(s) {
     const st = STATUS[statusOf(s)] || STATUS.pendiente;
@@ -328,6 +356,13 @@
     document.querySelectorAll('[data-repo]').forEach((a) => {
       if (REPO) a.href = REPO + a.dataset.repo;
       else a.remove();
+    });
+
+    /* tema: se arranca con lo guardado o, si no hay, con la preferencia del sistema */
+    applyTheme(currentTheme());
+    document.querySelectorAll('[data-theme-toggle]').forEach((b) => b.addEventListener('click', toggleTheme));
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!readTheme() && !userTheme) applyTheme(e.matches ? 'dark' : 'light');
     });
 
     const osWrap = $('#os');
