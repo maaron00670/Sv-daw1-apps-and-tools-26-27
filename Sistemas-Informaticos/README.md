@@ -6,7 +6,8 @@ Software para crear y ejecutar máquinas virtuales, permitiendo instalar y utili
 
 ### Oracle VM VirtualBox
 
-Software de virtualización multiplataforma, gratuito y de código abierto, adecuado para prácticas de instalación y administración de sistemas operativos.
+Software de virtualización multiplataforma, gratuito y codigo abierto, bueno para prácticas de instalación y administración de sistemas operativos.
+Es el que se usa por defecto en clases  
 
 **Windows**
 - **Ventajas:** amplia compatibilidad con sistemas operativos invitados y configuración flexible de las máquinas virtuales.
