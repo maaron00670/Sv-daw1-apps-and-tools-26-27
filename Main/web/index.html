@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Apps & Tools · DAW 1</title>
+  <meta name="description" content="Guía de herramientas, IDEs y software para el alumnado de 1.º de DAW del Centro San Valero, con alternativas para Windows, macOS y Linux.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Saltar al contenido</a>
+
+  <header class="topbar">
+    <button class="btn-menu" id="navToggle" type="button" aria-controls="sidebar" aria-expanded="false">Menú</button>
+    <a class="brand" href="#/"><span class="brand-name">Apps &amp; Tools</span></a>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#/">
+        <span class="brand-name">Apps &amp; Tools</span>
+        <span class="brand-sub" id="brandSub"></span>
+      </a>
+      <nav aria-label="Asignaturas"><ul class="nav" id="nav"></ul></nav>
+      <p class="side-foot">
+        <a data-repo="" target="_blank" rel="noopener">Repositorio en GitHub</a><br>
+        <a data-repo="/issues/new" target="_blank" rel="noopener">Proponer una herramienta</a>
+      </p>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="content">
+      <div class="toolbar" role="search">
+        <div class="field">
+          <label for="q">Buscar</label>
+          <input id="q" type="search" placeholder="VirtualBox, IA, Linux…" autocomplete="off">
+        </div>
+        <div class="field">
+          <span class="field-label" id="osLabel">Mi sistema</span>
+          <div class="seg" id="os" role="group" aria-labelledby="osLabel"></div>
+        </div>
+      </div>
+
+      <main id="app" tabindex="-1">
+        <noscript><p class="notice">Esta página necesita JavaScript para mostrar las herramientas.</p></noscript>
+      </main>
+
+      <footer class="foot">
+        Proyecto independiente creado con fines educativos para el alumnado de DAW del Centro San Valero.
+      </footer>
+    </div>
+  </div>
+
+  <!-- 1) configuración, 2) una línea por asignatura, 3) la app. Para añadir una asignatura: crea su archivo en data/ y añade aquí su <script>. -->
+  <script src="./data/site.js" defer></script>
+  <script src="./data/sistemas-informaticos.js" defer></script>
+  <script src="./data/ia.js" defer></script>
+  <script src="./data/pendientes.js" defer></script>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
