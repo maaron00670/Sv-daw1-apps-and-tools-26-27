@@ -1,3 +1,5 @@
+## ESTE REPOSITORIO NO ES NADA OFICIAL
+
 # SValero DAW 1 — Apps & Tools (2026–2027)
 
 Guía de herramientas, IDEs y software para el alumnado de **1.º de Desarrollo de Aplicaciones Web (DAW)** del Centro San Valero durante el curso 2026–2027.
