@@ -57,21 +57,30 @@ Es un sitio **estático**: no hay compilación, ni gestor de dependencias, ni pr
 
 ## Publicar en GitHub Pages
 
-La publicación es automática: el flujo de `.github/workflows/pages.yml` sube la carpeta `web/` a GitHub Pages en cada `push` a `main`.
+La publicación es automática: en cada `push` a `main` la carpeta `web/` se sube a GitHub Pages y queda publicada.
 
-**Puesta en marcha (una sola vez, en GitHub):**
+### Dónde vive la web
+
+La web se publica en **dos sitios**, ambos con el mismo contenido:
+
+| Dirección | Dónde se despliega |
+|---|---|
+| **<https://maaron00670.github.io/>** | Repositorio [`maaron00670/maaron00670.github.io`](https://github.com/maaron00670/maaron00670.github.io) — **esta es la que se comparte** |
+| <https://maaron00670.github.io/Svalero-daw1-apps-and-tools-26-27/> | Este repositorio — copia de reserva |
+
+El repositorio `maaron00670.github.io` es el repositorio "personal" de GitHub: por eso es el único que puede ocupar la raíz `maaron00670.github.io`. **No contiene la web**, solo la descarga de aquí y la publica.
+
+El flujo de este repositorio, al terminar, **avisa** al repositorio personal (`repository_dispatch`) para que publique en la raíz. Además, este último se repasa cada hora por si algún aviso se perdiera.
+
+### Puesta en marcha (una sola vez, en GitHub)
+
+Ya está hecho, pero para quien clone el repositorio:
 
 1. Abre el repositorio → **Settings** → **Pages**.
 2. En **Build and deployment** → **Source**, elige **GitHub Actions**.
-3. Hecho. A partir de ahí, cada `push` a `main` publica la web automáticamente.
+3. En el repositorio `maaron00670.github.io`, lo mismo, y añade el secreto **`PAGES_DISPATCH_TOKEN`** (un token con permiso `repo`) en *Settings* → *Secrets and variables* → *Actions*.
 
-**Publicar a mano:** pestaña **Actions** → *Desplegar la web en GitHub Pages* → **Run workflow**.
-
-La web queda disponible en:
-
-**<https://maaron00670.github.io/Svalero-daw1-apps-and-tools-26-27/>**
-
-> **¿Por qué ese address tan largo?** GitHub sirve cada repositorio de un usuario en `usuario.github.io/<nombre-del-repo>`. La raíz `maaron00670.github.io` está reservada para un repositorio especial llamado exactamente `maaron00670.github.io`. Si algún día quieres la URL corta (`maaron00670.github.io`), habría que crear ese repositorio y publicar allí.
+**Publicar a mano:** pestaña **Actions** → *Desplegar la web en GitHub Pages* → **Run workflow** (en cualquiera de los dos repositorios).
 
 > Si prefieres el modo clásico de Pages, en **Source** elige **Deploy from a branch** → rama `main` → carpeta `/web`. El fichero `web/.nojekyll` está preparado para ese caso.
 
