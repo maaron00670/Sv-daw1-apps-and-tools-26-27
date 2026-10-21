@@ -147,7 +147,28 @@
       ),
       t.description && h('p', { class: 'tool-desc' }, t.description),
       t.license && h('p', { class: 'tool-extra' }, h('strong', {}, 'Licencia. '), t.license),
-      t.notes && t.notes.length && h('ul', { class: 'notes' }, t.notes.map((n) => h('li', {}, n))),
+      t.notes && t.notes.length && h('ul', { class: 'notes' }, t.notes.map((n) => {
+        if (typeof n === 'string') {
+          // Convert URLs and hash links to clickable anchors
+          const urlRegex = /(https?:\/\/[^\s)]+|#\/[^\s)]+)/g;
+          if (urlRegex.test(n)) {
+            const parts = n.split(urlRegex);
+            const kids = parts.map((part, i) => {
+              if (i % 2 === 1) {
+                // It's a match
+                if (part.startsWith('http')) {
+                  return h('a', { href: part, target: '_blank', rel: 'noopener' }, part);
+                } else if (part.startsWith('#/')) {
+                  return h('a', { href: part }, part);
+                }
+              }
+              return part;
+            });
+            return h('li', {}, ...kids);
+          }
+        }
+        return h('li', {}, n);
+      })),
       osBlock
     );
   }
