@@ -1,0 +1,46 @@
+# Publica la carpeta web/ en GitHub Pages.
+#
+# La web es estática y no necesita compilación: el flujo solo sube los ficheros
+# tal cual y los publica. Cada push a main despliega automáticamente.
+#
+# Puesta en marcha (una sola vez, en la web de GitHub):
+#   Settings -> Pages -> Build and deployment -> Source -> GitHub Actions
+# A partir de ese momento, cada push a main publica la web.
+
+name: Desplegar la web en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # permite publicarla a mano desde la pestaña Actions
+
+permissions:
+  contents: read # leer el repositorio
+  pages: write # subir el artefacto a Pages
+  id-token: write # token de despliegue
+
+concurrency:
+  group: pages
+  cancel-in-progress: false # no corta despliegues a medias si hay varios pushes seguidos
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v7
+
+      - name: Preparar Pages
+        uses: actions/configure-pages@v6
+
+      - name: Subir la web
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./web
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v5
