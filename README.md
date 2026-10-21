@@ -67,9 +67,13 @@ La publicación es automática: el flujo de `.github/workflows/pages.yml` sube l
 
 **Publicar a mano:** pestaña **Actions** → *Desplegar la web en GitHub Pages* → **Run workflow**.
 
-La web queda disponible en <https://maaron00670.github.io/>.
+La web queda disponible en:
 
-> Si algún día prefieres el modo clásico de Pages, en **Source** elige **Deploy from a branch** → rama `main` → carpeta `/web`. El fichero `web/.nojekyll` está preparado para ese caso.
+**<https://maaron00670.github.io/Svalero-daw1-apps-and-tools-26-27/>**
+
+> **¿Por qué ese address tan largo?** GitHub sirve cada repositorio de un usuario en `usuario.github.io/<nombre-del-repo>`. La raíz `maaron00670.github.io` está reservada para un repositorio especial llamado exactamente `maaron00670.github.io`. Si algún día quieres la URL corta (`maaron00670.github.io`), habría que crear ese repositorio y publicar allí.
+
+> Si prefieres el modo clásico de Pages, en **Source** elige **Deploy from a branch** → rama `main` → carpeta `/web`. El fichero `web/.nojekyll` está preparado para ese caso.
 
 ## Cómo añadir una asignatura o una herramienta
 
