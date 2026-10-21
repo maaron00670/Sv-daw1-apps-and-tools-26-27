@@ -8,7 +8,7 @@ Guía de herramientas, IDEs y software para  de Desarrollo de Aplicaciones Web (
 
 Este repositorio recopila las aplicaciones, herramientas y entornos de desarrollo utilizados a lo largo del curso, junto con **alternativas equivalentes** para quienes prefieran utilizar otro software o trabajen con un sistema operativo diferente.
 
-El objetivo es facilitar el acceso a las herramientas necesarias para cada asignatura, ofrecer alternativas multiplataforma y centralizar la información útil para el alumnado.
+El objetivo es facilitar el acceso a las herramientas necesarias para cada asignatura, ofrecer alternativas multiplataforma y centralizar la información útil para estudiantes.
 
 ### Sistemas operativos compatibles
 
@@ -100,4 +100,4 @@ Las contribuciones, correcciones y sugerencias son bienvenidas para mantener la 
 
 ---
 
-*Proyecto independiente creado con fines educativos para el alumnado de DAW del Centro San Valero.*
+*Proyecto independiente creado con fines educativos para estudiantes de DAW.*

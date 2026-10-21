@@ -13,7 +13,7 @@ GitHub ofrece el **GitHub Student Developer Pack**, un conjunto de herramientas,
 
 1. **Accede a la página oficial.** Ve a [education.github.com/pack](https://education.github.com/pack).
 2. **Inicia la solicitud.** Pulsa "Get your pack" e inicia sesión con la cuenta de GitHub que deseas utilizar (preferiblemente tu cuenta personal).
-3. **Completa el formulario.** Selecciona tu rol como "Student", indica el centro educativo (Centro San Valero) y el correo electrónico que vas a utilizar para la verificación. Si ya añadiste tu correo institucional como secundario, puedes seleccionarlo aquí.
+3. **Completa el formulario.** Selecciona tu rol como "Student", indica tu centro educativo y el correo electrónico que vas a utilizar para la verificación. Si ya añadiste tu correo institucional como secundario, puedes seleccionarlo aquí.
 4. **Verifica tu condición de estudiante.** GitHub te pedirá alguna prueba de que eres estudiante. Normalmente se solicita un documento válido (tarjeta de estudiante, matrícula, certificado de matrícula o documentación similar). Sube una imagen o PDF claro con tus datos visibles.
 5. **Espera la revisión.** Una vez enviada la solicitud, el equipo de GitHub revisará la documentación. El proceso suele tardar desde unos minutos hasta unas horas, aunque en algunos casos puede demorar un poco más.
 6. **Disfruta de los beneficios.** Cuando la solicitud sea aprobada, recibirás un correo de confirmación y podrás acceder a todos los beneficios del GitHub Student Developer Pack desde [education.github.com/pack](https://education.github.com/pack).
