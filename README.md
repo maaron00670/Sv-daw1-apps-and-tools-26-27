@@ -1,6 +1,6 @@
-## ESTE REPOSITORIO NO ES NADA OFICIAL
+## ESTE REPOSITORIO NO ES NADA OFICIAL, todo lo que se encuentra aqui fue investigacion mia y experiencia propia
 
-# SValero DAW 1 — Apps & Tools (2026–2027)
+# SV DAW 1 — Apps & Tools (2026–2027)
 
 Guía de herramientas, IDEs y software para  de Desarrollo de Aplicaciones Web (DAW) basado en mi experiencia.
 
