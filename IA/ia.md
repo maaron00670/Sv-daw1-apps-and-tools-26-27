@@ -16,6 +16,8 @@ En este apratdo encontraras IAs y herramientas basadas en IA y el uso de cada un
 
 - **[Duck.ai](https://duck.ai/):** Duck.ai no es tan potente como las anteriores pero es gratis, privada y accesible. No requiere inicios de sesion pero si necesitas algo rapido y que no requiere mucho esfuerzo Duck.ai te puede ayudar
 
+- **[Qwen](https://chat.qwen.ai/):** Qwen es el modelo de lenguaje desarrollado por Alibaba. Su punto fuerte es su excelente capacidad de razonamiento, manejo de contextos muy largos y su naturaleza de código abierto. Es una alternativa muy potente y versátil, destacando en comprensión de documentos, análisis y redacción, con un rendimiento que compite directamente con los modelos más top del mercado.
+
 ---
 
 ## Para programar
@@ -26,6 +28,10 @@ En este apratdo encontraras IAs y herramientas basadas en IA y el uso de cada un
 
 - **[Claude Code](https://www.anthropic.com/claude-code):** Agente de Anthropic que funciona en terminal, IDE, app de escritorio o navegador. Lee el repositorio, edita archivos, ejecuta comandos y tests, y puede ayudar con bugs, dependencias, conflictos de Git, documentación y pull requests. Es especialmente útil para proyectos grandes o tareas que afectan a varios archivos.
 
+- **[OpenCode](https://opencode.ai/):** Agente de programación de código abierto que funciona en terminal, aplicación de escritorio o navegador. Su punto fuerte es que es independiente del modelo: tú eliges con cuál trabajar (Claude, GPT, Gemini, Qwen...) usando tu propia clave, o incluso uno local con Ollama o LM Studio, así que no te ata a ninguna empresa ni te obliga a una suscripción propia. Lee el repositorio, edita archivos, ejecuta comandos y tests, y se configura con un `opencode.json`, plugins, agentes personalizados, skills y servidores MCP. En resumen, es un Claude Code open source y multi-modelo.
+
 - **[Lovable](https://lovable.dev/):** Herramientas para crear aplicaciones web completas a partir de una descripción. Sirven sobre todo para prototipos y demos rápidas; no son la mejor opción para aprender fundamentos ni para mantener un proyecto complejo.
+
+- **[Qwen Coder](https://github.com/QwenLM/Qwen2.5-Coder):** Modelo de la familia Qwen altamente optimizado para tareas de programación. Destaca por generar, entender y depurar código en múltiples lenguajes con gran precisión. Se puede integrar en tu IDE favorito o usar a través de su API, siendo una de las mejores opciones de código abierto para asistencia en el desarrollo, con un rendimiento que rivaliza con las soluciones de pago.
 
 En general la funcionalidad es la misma solo que de dinstinta empresa. 
