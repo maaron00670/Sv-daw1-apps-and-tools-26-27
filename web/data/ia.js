@@ -80,7 +80,10 @@ window.SUBJECTS.push({
           platforms: ["web", "windows", "macos", "linux"],
           badges: ["Gratis con el plan de estudiantes"],
           description:
-            "Que no te engañe el «copilot» de su nombre: es un agente que puedes pagar o conseguir completamente gratis con el plan de estudiantes de GitHub (muy recomendable). Se puede usar en la propia web, en tu IDE favorito o en tu terminal; si no te gustan las terminales, también hay versión con interfaz gráfica."
+            "Que no te engañe el «copilot» de su nombre: es un agente que puedes pagar o conseguir completamente gratis con el plan de estudiantes de GitHub (muy recomendable). Se puede usar en la propia web, en tu IDE favorito o en tu terminal; si no te gustan las terminales, también hay versión con interfaz gráfica.",
+          notes: [
+            "Puedes conseguirlo gratis con el GitHub Student Developer Pack. Consulta la guía en Extras → GitHub Student Developer Pack (#/extras)."
+          ]
         },
         {
           name: "Claude Code",
