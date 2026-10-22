@@ -18,6 +18,8 @@ En este apratdo encontraras IAs y herramientas basadas en IA y el uso de cada un
 
 - **[Qwen](https://chat.qwen.ai/):** Qwen es el modelo de lenguaje desarrollado por Alibaba. Su punto fuerte es su excelente capacidad de razonamiento, manejo de contextos muy largos y su naturaleza de código abierto. Es una alternativa muy potente y versátil, destacando en comprensión de documentos, análisis y redacción, con un rendimiento que compite directamente con los modelos más top del mercado.
 
+- **[Mistral](https://chat.mistral.ai/):** Mistral es la alternativa europea a los grandes chatbots, desarrollada en Francia y con modelos de código abierto. Su punto fuerte es la privacidad y que puedes usar sus modelos en tus propios proyectos, además de ofrecer un buen rendimiento en redacción, resumen y programación. Si buscas algo potente sin depender de las grandes tecnológicas estadounidenses, Mistral es una opción muy a tener en cuenta.
+
 ---
 
 ## Para programar
@@ -35,3 +37,13 @@ En este apratdo encontraras IAs y herramientas basadas en IA y el uso de cada un
 - **[Qwen Coder](https://github.com/QwenLM/Qwen2.5-Coder):** Modelo de la familia Qwen altamente optimizado para tareas de programación. Destaca por generar, entender y depurar código en múltiples lenguajes con gran precisión. Se puede integrar en tu IDE favorito o usar a través de su API, siendo una de las mejores opciones de código abierto para asistencia en el desarrollo, con un rendimiento que rivaliza con las soluciones de pago.
 
 En general la funcionalidad es la misma solo que de dinstinta empresa. 
+
+--- 
+
+## Para estudiar
+
+- **[NotebookLM](https://notebook.google.com):** NotebookLM es la campeona indescutible, es de google y ademas esta integrado en el propio clasroom. Se va adaptando a tus necesidades, te puede crear podcast, trucos, examenes , ¡de todo!, y lo mejor es que es completamente gratis.
+
+- **[ChatGPT](https://chatgpt.com/):** ChatGPT es una opción muy completa para estudiar. Le puedes pasar tus apuntes o un PDF y pedirle resúmenes, esquemas, explicaciones de los conceptos que no entiendas o incluso exámenes de práctica con sus respuestas. Al ser tan general, sirve para prácticamente cualquier asignatura, aunque conviene revisar lo que te dice y no usarlo solo para copiar.
+
+- **[Copilot](https://copilot.microsoft.com/):** Copilot es la apuesta de Microsoft para estudiar, sobre todo si ya trabajas con Word, PowerPoint o Teams. Puede resumir documentos, ayudarte a redactar trabajos, generar presentaciones y explicarte contenido directamente desde el ecosistema Microsoft 365, así que si tus apuntes y trabajos están ahí, lo tendrás todo integrado en el mismo sitio.

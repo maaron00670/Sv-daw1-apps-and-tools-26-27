@@ -60,6 +60,14 @@ window.SUBJECTS.push({
           badges: ["De código abierto"],
           description:
             "Modelo de lenguaje desarrollado por Alibaba. Su punto fuerte es su excelente capacidad de razonamiento, el manejo de contextos muy largos y su naturaleza de código abierto. Es una alternativa potente y versátil, destacando en comprensión de documentos, análisis y redacción, con un rendimiento que compite directamente con los modelos más top del mercado."
+        },
+        {
+          name: "Mistral",
+          url: "https://chat.mistral.ai/",
+          platforms: ["web"],
+          badges: ["Europea", "De código abierto"],
+          description:
+            "La alternativa europea a los grandes chatbots, desarrollada en Francia y con modelos de código abierto. Su punto fuerte es la privacidad y que puedes usar sus modelos en tus propios proyectos, además de ofrecer un buen rendimiento en redacción, resumen y programación. Si buscas algo potente sin depender de las grandes tecnológicas estadounidenses, es una opción muy a tener en cuenta."
         }
       ]
     },
@@ -114,6 +122,34 @@ window.SUBJECTS.push({
           badges: ["De código abierto"],
           description:
             "Modelo de la familia Qwen altamente optimizado para tareas de programación. Destaca por generar, entender y depurar código en múltiples lenguajes con gran precisión. Se puede integrar en tu IDE favorito o usar a través de su API, y es una de las mejores opciones de código abierto para la asistencia en el desarrollo, con un rendimiento que rivaliza con las soluciones de pago."
+        }
+      ]
+    },
+    {
+      title: "Para estudiar",
+      tools: [
+        {
+          name: "NotebookLM",
+          url: "https://notebook.google.com",
+          platforms: ["web"],
+          badges: ["Gratis", "Ecosistema Google"],
+          description:
+            "La campeona indiscutible para estudiar: es de Google y además está integrado en el propio Classroom. Se adapta a tus necesidades y puede crearte pódcasts, trucos, exámenes y de todo, con la ventaja de que es completamente gratis."
+        },
+        {
+          name: "ChatGPT",
+          url: "https://chatgpt.com/",
+          platforms: ["web"],
+          description:
+            "Una opción muy completa para estudiar. Le puedes pasar tus apuntes o un PDF y pedirle resúmenes, esquemas, explicaciones de los conceptos que no entiendas o incluso exámenes de práctica con sus respuestas. Al ser tan general, sirve para prácticamente cualquier asignatura, aunque conviene revisar lo que te dice y no usarlo solo para copiar."
+        },
+        {
+          name: "Copilot",
+          url: "https://copilot.microsoft.com/",
+          platforms: ["web"],
+          badges: ["Ecosistema Microsoft"],
+          description:
+            "La apuesta de Microsoft para estudiar, sobre todo si ya trabajas con Word, PowerPoint o Teams. Puede resumir documentos, ayudarte a redactar trabajos, generar presentaciones y explicarte contenido directamente desde el ecosistema Microsoft 365, así que si tus apuntes y trabajos están ahí, lo tendrás todo integrado en el mismo sitio."
         }
       ]
     }

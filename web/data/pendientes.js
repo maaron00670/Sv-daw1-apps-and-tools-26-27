@@ -4,6 +4,5 @@
 [
   { id: "bases-de-datos", name: "Bases de Datos", order: 30 },
   { id: "lenguajes-de-marcas", name: "Lenguajes de Marcas", order: 40 },
-  { id: "entornos-de-desarrollo", name: "Entornos de Desarrollo", order: 50 },
-  { id: "fol", name: "FOL", order: 60 }
+  { id: "entornos-de-desarrollo", name: "Entornos de Desarrollo", order: 50 }
 ].forEach((s) => window.SUBJECTS.push(s));
