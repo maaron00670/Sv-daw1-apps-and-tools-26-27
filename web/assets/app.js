@@ -1,4 +1,4 @@
-/* Apps & Tools · DAW 1
+/* Apps & Tools
    Lee window.SITE y window.SUBJECTS (carpeta data/) y pinta la web.
    No hay nada de contenido aquí: para añadir cosas, edita los archivos de data/. */
 (() => {
@@ -46,7 +46,7 @@
   const groups = () => {
     const map = new Map();
     subjects.forEach((s) => {
-      const g = s.group || 'Asignaturas';
+      const g = s.group || 'Categorías';
       if (!map.has(g)) map.set(g, []);
       map.get(g).push(s);
     });
@@ -91,11 +91,10 @@
     });
   }
 
-  function toggleTheme() {
+  function toggleTheme(e) {
     const next = currentTheme() === 'dark' ? 'light' : 'dark';
-    userTheme = next;
-    applyTheme(next);
-    writeTheme(next);
+    const run = () => { userTheme = next; applyTheme(next); writeTheme(next); };
+    if (window.FX && window.FX.theme) window.FX.theme(run, e); else run(); /* animación opcional (fx.js) */
   }
 
   /* ---------- piezas ---------- */
@@ -197,16 +196,16 @@
     return h(
       'div',
       {},
-      h('h1', {}, 'Herramientas y alternativas para DAW\u00A01'),
+      h('h1', {}, 'Herramientas y software para desarrollo web'),
       h('p', { class: 'lede' }, SITE.intro),
       SITE.notice && h('p', { class: 'notice' }, SITE.notice),
 
       h(
         'section',
         { class: 'home-block' },
-        h('h2', {}, 'Asignaturas'),
+        h('h2', {}, 'Categorías'),
         h('p', { class: 'lede', style: 'margin:-.5rem 0 1.25rem;font-size:1rem' },
-          `${plural(withContent, 'asignatura tiene', 'asignaturas tienen')} contenido de ${subjects.length}; ${plural(total, 'herramienta recopilada', 'herramientas recopiladas')} hasta ahora.`),
+          `${plural(withContent, 'categoría tiene', 'categorías tienen')} contenido de ${subjects.length}; ${plural(total, 'herramienta recopilada', 'herramientas recopiladas')} hasta ahora.`),
         groups().map(([g, list]) => [h('h3', { class: 'group-title' }, g), h('div', { class: 'tiles' }, list.map(tile))])
       ),
 
@@ -217,9 +216,9 @@
         h(
           'dl',
           { class: 'how' },
-          h('div', {}, h('dt', {}, 'Con alternativas'), h('dd', {}, 'Cada herramienta del curso viene con equivalentes para quien prefiera usar otro software.')),
+          h('div', {}, h('dt', {}, 'Con alternativas'), h('dd', {}, 'Cada herramienta viene con equivalentes para quien prefiera usar otro software.')),
           h('div', {}, h('dt', {}, 'Para tu sistema'), h('dd', {}, 'Filtra por Windows, macOS o Linux. Se priorizan las herramientas multiplataforma.')),
-          h('div', {}, h('dt', {}, 'Siempre en obras'), h('dd', {}, 'Se amplía y reorganiza durante el curso 2026–2027 con nuevas asignaturas y herramientas.'))
+          h('div', {}, h('dt', {}, 'Siempre en obras'), h('dd', {}, 'Se amplía y reorganiza de forma continua con nuevas categorías y herramientas.'))
         )
       ),
 
@@ -248,7 +247,7 @@
     if (!toolsOf(s).length) {
       page.append(
         h('div', { class: 'empty' },
-          h('h2', {}, 'Esta asignatura todavía no tiene herramientas'),
+          h('h2', {}, 'Esta categoría todavía no tiene herramientas'),
           h('p', {}, 'Aún no se ha recopilado nada aquí. Si sabes qué software se usa, ', suggestLink('propón una herramienta'), '.')
         )
       );
@@ -274,7 +273,7 @@
       page.append(
         h('div', { class: 'empty' },
           h('h2', {}, `Nada para ${PLATFORMS[state.os]} todavía`),
-          h('p', {}, 'Ninguna herramienta de esta asignatura está marcada como compatible con ese sistema. Quita el filtro para ver todas, o ', suggestLink('sugiere una alternativa'), '.')
+          h('p', {}, 'Ninguna herramienta de esta categoría está marcada como compatible con ese sistema. Quita el filtro para ver todas, o ', suggestLink('sugiere una alternativa'), '.')
         )
       );
     }
@@ -325,7 +324,7 @@
   function viewNotFound() {
     return h('div', { class: 'empty' },
       h('h2', {}, 'Esa página no existe'),
-      h('p', {}, 'Puede que la asignatura se haya renombrado. ', h('a', { href: '#/' }, 'Volver al inicio'), '.')
+      h('p', {}, 'Puede que la categoría se haya renombrado. ', h('a', { href: '#/' }, 'Volver al inicio'), '.')
     );
   }
 
@@ -403,11 +402,14 @@
     q.addEventListener('input', () => { state.q = q.value.trim(); renderMain(); });
 
     window.addEventListener('hashchange', () => {
-      if (state.q) { state.q = ''; q.value = ''; }
-      setNav(false);
-      renderMain();
-      window.scrollTo(0, 0);
-      $('#app').focus({ preventScroll: true });
+      const go = () => {
+        if (state.q) { state.q = ''; q.value = ''; }
+        setNav(false);
+        renderMain();
+        window.scrollTo(0, 0);
+        $('#app').focus({ preventScroll: true });
+      };
+      if (window.FX && window.FX.page) window.FX.page(go); else go(); /* animación opcional (fx.js) */
     });
 
     $('#navToggle').addEventListener('click', () => setNav(!document.body.classList.contains('nav-open')));
