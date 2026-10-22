@@ -66,7 +66,7 @@ La web se publica en **dos sitios**, ambos con el mismo contenido:
 | Dirección | Dónde se despliega |
 |---|---|
 | **<https://maaron00670.github.io/>** | Repositorio [`maaron00670/maaron00670.github.io`](https://github.com/maaron00670/maaron00670.github.io) — **esta es la que se comparte** |
-| <https://maaron00670.github.io/Svalero-daw1-apps-and-tools-26-27/> | Este repositorio — copia de reserva |
+| <https://maaron00670.github.io/Sv-daw1-apps-and-tools-26-27/> | Este repositorio — copia de reserva |
 
 El repositorio `maaron00670.github.io` es el repositorio "personal" de GitHub: por eso es el único que puede ocupar la raíz `maaron00670.github.io`. **No contiene la web**, solo la descarga de aquí y la publica.
 
