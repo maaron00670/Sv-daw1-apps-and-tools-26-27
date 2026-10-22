@@ -2,6 +2,10 @@
 
 Recopilación de aplicaciones y proyectos gratuitos o de código abierto que pueden resultar útiles durante el curso. Antes de instalar cualquier cosa, revisa siempre la licencia, los requisitos y los términos de uso del servicio.
 
+## Paginas dedicadas
+
+- **[FMHY](https://fmhy.net/):** FMHY es una pagina que recopila una cantidad exagerada de contenido gratis, libros, juegos, infromatica, sistemas operativos, ciberseguridad, alternativas, herramientas..
+
 ### Aplicaciones de escritorio
 
 - **[Pear Desktop](https://github.com/pear-devs/pear-desktop):** Cliente de escritorio no oficial para YouTube Music, de código abierto y disponible para Windows, macOS y Linux. Mantiene la interfaz de YouTube Music, pero añade integración con el escritorio, plugins, temas, descarga de canciones y bloqueo de anuncios. No está afiliado a Google ni a YouTube.

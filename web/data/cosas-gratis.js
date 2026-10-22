@@ -6,6 +6,19 @@ window.SUBJECTS.push({
   description: "Aplicaciones y proyectos gratuitos o de código abierto que pueden resultar útiles durante el curso.",
   sections: [
     {
+      title: "Páginas dedicadas",
+      tools: [
+        {
+          name: "FMHY",
+          url: "https://fmhy.net/",
+          platforms: ["web"],
+          badges: ["Recopilatorio"],
+          description:
+            "FMHY es una página que recopila una cantidad exagerada de contenido gratis: libros, juegos, informática, sistemas operativos, ciberseguridad, alternativas, herramientas y mucho más."
+        }
+      ]
+    },
+    {
       title: "Aplicaciones de escritorio",
       tools: [
         {
