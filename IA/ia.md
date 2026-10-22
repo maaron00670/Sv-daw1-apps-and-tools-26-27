@@ -47,3 +47,13 @@ En general la funcionalidad es la misma solo que de dinstinta empresa.
 - **[ChatGPT](https://chatgpt.com/):** ChatGPT es una opción muy completa para estudiar. Le puedes pasar tus apuntes o un PDF y pedirle resúmenes, esquemas, explicaciones de los conceptos que no entiendas o incluso exámenes de práctica con sus respuestas. Al ser tan general, sirve para prácticamente cualquier asignatura, aunque conviene revisar lo que te dice y no usarlo solo para copiar.
 
 - **[Copilot](https://copilot.microsoft.com/):** Copilot es la apuesta de Microsoft para estudiar, sobre todo si ya trabajas con Word, PowerPoint o Teams. Puede resumir documentos, ayudarte a redactar trabajos, generar presentaciones y explicarte contenido directamente desde el ecosistema Microsoft 365, así que si tus apuntes y trabajos están ahí, lo tendrás todo integrado en el mismo sitio.
+
+---
+
+## Para presentaciones y documentos
+
+- **[Gamma](https://gamma.app/):** Gamma es una IA para crear presentaciones, documentos y páginas web a partir de un prompt o un tema. Genera diapositivas con buen diseño, permite editar con IA, añadir contenido y compartirlo fácilmente. Tiene un plan gratuito muy completo para crear presentaciones rápidas sin tener que partir desde una plantilla vacía.
+
+- **[Canva AI](https://www.canva.com/es/create/ai-images-presentations/):** Canva cuenta con IA para generar presentaciones, documentos, infografías y diseños completos. Puedes pedirle una presentación sobre cualquier tema y te la genera con texto, imágenes y estructura lista para editar. Al estar integrado con todo el editor de Canva, es muy fácil personalizarla después.
+
+- **[Beautiful.AI](https://www.beautiful.ai/):** Herramienta centrada exclusivamente en presentaciones. Usa plantillas inteligentes que se adaptan automáticamente al contenido que añades, lo que evita que rompas el diseño. Es ideal para crear presentaciones limpias y profesionales con mínimo esfuerzo. Tiene algunas limitaciones en el plan gratuito, pero merece la pena probarlo.

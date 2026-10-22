@@ -152,6 +152,35 @@ window.SUBJECTS.push({
             "La apuesta de Microsoft para estudiar, sobre todo si ya trabajas con Word, PowerPoint o Teams. Puede resumir documentos, ayudarte a redactar trabajos, generar presentaciones y explicarte contenido directamente desde el ecosistema Microsoft 365, así que si tus apuntes y trabajos están ahí, lo tendrás todo integrado en el mismo sitio."
         }
       ]
+    },
+    {
+      title: "Para presentaciones y documentos",
+      tools: [
+        {
+          name: "Gamma",
+          url: "https://gamma.app/",
+          platforms: ["web"],
+          badges: ["Gratis", "IA para presentaciones"],
+          description:
+            "IA para crear presentaciones, documentos y páginas web a partir de un prompt o un tema. Genera diapositivas con buen diseño, permite editar con IA, añadir contenido y compartirlo fácilmente. Tiene un plan gratuito muy completo para crear presentaciones rápidas sin partir desde una plantilla vacía."
+        },
+        {
+          name: "Canva AI",
+          url: "https://www.canva.com/es/create/ai-images-presentations/",
+          platforms: ["web"],
+          badges: ["Gratis"],
+          description:
+            "Canva cuenta con IA para generar presentaciones, documentos, infografías y diseños completos. Puedes pedirle una presentación sobre cualquier tema y te la genera con texto, imágenes y estructura lista para editar. Al estar integrado con todo el editor de Canva, es muy fácil personalizarla después."
+        },
+        {
+          name: "Beautiful.AI",
+          url: "https://www.beautiful.ai/",
+          platforms: ["web"],
+          badges: ["Plantillas inteligentes"],
+          description:
+            "Herramienta centrada exclusivamente en presentaciones. Usa plantillas inteligentes que se adaptan automáticamente al contenido que añades, lo que evita romper el diseño. Es ideal para crear presentaciones limpias y profesionales con mínimo esfuerzo. Tiene algunas limitaciones en el plan gratuito, pero merece la pena probarlo."
+        }
+      ]
     }
   ]
 });
